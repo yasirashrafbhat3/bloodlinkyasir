@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Homepage sections live in `src/components/bloodlink/` (one component per section) and are composed in `src/routes/index.tsx`; nav uses in-page anchors because the brief asked for a single smooth-scrolling homepage.
+- All sample data lives in `src/data/bloodlink.ts`; search/filter logic lives in `src/lib/bloodlink-filters.ts` as pure functions so it stays unit-tested.
