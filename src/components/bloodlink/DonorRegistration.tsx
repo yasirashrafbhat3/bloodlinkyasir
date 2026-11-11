@@ -28,7 +28,7 @@ type FormValues = z.infer<typeof schema>;
 
 const inputCls = "h-12 rounded-xl bg-background";
 
-function Field({ id, label, error, children }: { id: string; label: string; error?: string; children: React.ReactNode }) {
+function Field({ id, label, error, children }: { id: string; label: string; error?: string | undefined; children: React.ReactNode }) {
   return (
     <div className="space-y-1.5">
       <Label htmlFor={id} className="text-sm font-semibold">

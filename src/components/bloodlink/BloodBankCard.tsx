@@ -7,7 +7,7 @@ import type { GroupFilter } from "@/lib/bloodlink-filters";
 import { cn } from "@/lib/utils";
 import { DemoBadge } from "./shared";
 
-function GroupGrid({ available, highlight }: { available: BloodBank["available"]; highlight?: GroupFilter }) {
+function GroupGrid({ available, highlight }: { available: BloodBank["available"]; highlight?: GroupFilter | undefined }) {
   return (
     <div className="grid grid-cols-4 gap-1.5">
       {BLOOD_GROUPS.map((g) => {
@@ -30,7 +30,7 @@ function GroupGrid({ available, highlight }: { available: BloodBank["available"]
   );
 }
 
-export function BloodBankCard({ bank, highlight }: { bank: BloodBank; highlight?: GroupFilter }) {
+export function BloodBankCard({ bank, highlight }: { bank: BloodBank; highlight?: GroupFilter | undefined }) {
   const [open, setOpen] = useState(false);
   return (
     <>
