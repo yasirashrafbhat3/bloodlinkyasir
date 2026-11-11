@@ -35,9 +35,9 @@ export function ImpactStatistics() {
             </div>
             <DemoBadge tone="dark">Illustrative demo statistics — not actual platform achievements</DemoBadge>
           </div>
-          <dl className="relative mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-3xl bg-ink-foreground/10 lg:grid-cols-4">
+          <dl className="relative mt-12 grid grid-cols-2 gap-3 lg:grid-cols-4">
             {STATS.map((s) => (
-              <div key={s.label} className="bg-ink p-6 sm:p-8">
+              <div key={s.label} className="rounded-3xl border border-ink-foreground/10 bg-ink-foreground/[0.04] p-6 backdrop-blur sm:p-8">
                 <dt className="text-sm text-ink-foreground/60">{s.label}</dt>
                 <dd className="mt-2 text-3xl font-extrabold text-ink-foreground sm:text-5xl">
                   <Counter value={s.value} suffix={s.suffix} />

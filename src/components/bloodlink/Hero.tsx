@@ -7,12 +7,12 @@ import { Serif } from "./shared";
 const floatCards = [
   { group: "O-", label: "Universal donor", className: "left-0 top-[14%] sm:-left-4", delay: 0.5 },
   { group: "AB+", label: "Universal recipient", className: "right-0 top-[8%] sm:-right-2", delay: 0.7 },
-  { group: "B+", label: "3 nearby · sample", className: "right-2 bottom-[22%] sm:-right-6", delay: 0.9 },
+  { group: "B+", label: "3 nearby · sample", className: "left-0 top-[52%] sm:-left-8", delay: 0.9 },
 ];
 
 export function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden pt-28 pb-20 sm:pt-32 lg:pt-36 lg:pb-28">
+    <section id="home" className="relative overflow-hidden pt-28 pb-12 sm:pt-32 lg:pt-36 lg:pb-16">
       <div className="pointer-events-none absolute inset-0 bg-rose-glow" aria-hidden="true" />
       <div className="pointer-events-none absolute inset-0 bg-grid" aria-hidden="true" />
 
